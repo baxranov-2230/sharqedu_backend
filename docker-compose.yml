@@ -43,7 +43,7 @@ services:
     volumes:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
-    command: certonly --webroot -w /var/www/certbot --email axrorwillberich2230@gmail.com -d docs.sharqedu.uz --agree-tos --non-interactive
+    command: certonly --webroot -w /var/www/certbot --email axrorwillberich2230@gmail.com -d docs.sharqedu.uz --agree-tos
 
 volumes:
   postgres_data:
