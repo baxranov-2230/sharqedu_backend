@@ -18,7 +18,7 @@ async def get_by_id(
     ):
     return await student_crud.get(db=db , id=id)
 
-@admin_router.get("/get-all-students")
+@admin_router.get("/get_all_students")
 async def get_all_students(db: AsyncSession = Depends(get_db)):
     return await student_crud.get_all(db=db)
 
