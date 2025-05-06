@@ -58,7 +58,7 @@ async def refresh(
         }
     
 
-@admin_router.get("/get-student/{id}")
+@admin_router.get("/get_student/{id}")
 async def get_by_id(
     id: 
     int, db:AsyncSession = Depends(get_db),
@@ -83,7 +83,7 @@ async def get_by_id(
     ):
     return await employee_crud.get(db=db , id=id)
 
-@admin_router.get("/get-all-employee")
+@admin_router.get("/get_all_employee")
 async def get_all_employees(
     db: AsyncSession = Depends(get_db),
     token: str = Depends(oauth2_scheme)
