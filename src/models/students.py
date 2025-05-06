@@ -7,8 +7,8 @@ class Student(Base):
 
     id = Column(Integer , primary_key=True)
     first_name = Column(String , nullable=False)
-    # last_name = Column(String , nullable=False)
-    # father_name = Column(String , nullable=False)
+    last_name = Column(String , nullable=False)
+    father_name = Column(String , nullable=False)
     direction = Column(String , nullable=False)
     phone_number = Column(String , nullable=False)
     is_read = Column(Boolean , nullable=False , default=False)
