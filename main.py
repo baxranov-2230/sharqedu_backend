@@ -14,6 +14,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
     allow_origins=[
+        "https://sharqedu.uz/",
         "http://localhost:5173",
         "http://localhost:5174",
     ],
