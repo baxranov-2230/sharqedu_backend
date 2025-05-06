@@ -12,7 +12,7 @@ student_router = APIRouter(
 
 main_crud = MainCrud(model=Student)
 
-@student_router.post("/create-student")
+@student_router.post("/create_student")
 async def create(
     student_items: StudentCreate ,
     db: AsyncSession = Depends(get_db)):

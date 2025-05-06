@@ -50,14 +50,14 @@ async def create(
 
 
 
-@news_router.get("get-by-id/{new_id}")
+@news_router.get("get_by_id/{new_id}")
 async def get_by_id(
     blog_id: int,
     db: AsyncSession = Depends(get_db)
 ):
     return await blog_crud.get(db=db , blog_id=blog_id)
 
-@news_router.get("/get-all")
+@news_router.get("/get_all")
 async def get_all(
     db:AsyncSession = Depends(get_db)
 ):

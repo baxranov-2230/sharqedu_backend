@@ -14,7 +14,7 @@ employee_router = APIRouter(
 
 employee_crud = MainCrud(model=Employee)
 
-@employee_router.post("/create-employee")
+@employee_router.post("/create_employee")
 async def create_employee(
     resume_file: UploadFile,
     passport_file: UploadFile,
