@@ -66,7 +66,7 @@ async def get_by_id(
     ):
     return await student_crud.get(db=db , id=id)
 
-@admin_router.get("/get_all-_students")
+@admin_router.get("/get_all_students")
 async def get_all_students(
     db: AsyncSession = Depends(get_db),
     token: str = Depends(oauth2_scheme)

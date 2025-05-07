@@ -4,7 +4,10 @@ from starlette.middleware.cors import CORSMiddleware
 from src.api import main_router
 import uvicorn
 
-app = FastAPI()
+app = FastAPI(
+    # docs_url=None,  # Swagger UI ni o'chirish
+    # redoc_url=None  # ReDoc ni o'chirish
+)
 
 app.include_router(main_router)
 
