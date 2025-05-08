@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 
 class StudentBase(BaseModel):
-    full_name : str
+    first_name : str
     # last_name : str
     # father_name : str
     direction : str
@@ -15,7 +15,7 @@ class StudentCreate(StudentBase):
 class StudentResponse(BaseModel):
     id: int
     phone_number: str
-    full_name : str
+    first_name : str
     # last_name : str
     # father_name : str
     direction : str

@@ -6,7 +6,7 @@ class Student(Base):
     __tablename__ = "students"
 
     id = Column(Integer , primary_key=True)
-    full_name = Column(String , nullable=False)
+    first_name = Column(String , nullable=False)
     # last_name = Column(String , nullable=False)
     # father_name = Column(String , nullable=False)
     direction = Column(String , nullable=False)
