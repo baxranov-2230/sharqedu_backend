@@ -2,7 +2,9 @@ from fastapi import APIRouter
 from src.utils.auth import *
 from src.models import Student , Employee
 from fastapi.security import OAuth2PasswordRequestForm
+from src.schemas.user import UserCreate
 from src.utils.jwt_auth import *
+from src.models.user import User
 
 
 admin_router = APIRouter(
@@ -43,6 +45,34 @@ async def login(
             "token_type": "bearer"
         }
 
+@admin_router.post("/register")
+async def register(
+    username: str,
+    password: str,
+    role: str,
+    db: AsyncSession = Depends(get_db)
+):
+    try:
+
+        hashed_password = await hash_password(password=password)
+        user_data = UserCreate(
+            username=username,
+            password = hashed_password,
+            role = role
+        )
+        new_user = User(**user_data.model_dump(exclude_unset=True))
+        db.add(new_user)
+        await db.commit()
+        await db.refresh(new_user)
+        return new_user
+    
+    except Exception as e:
+        await db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error : {e}"
+        )
+
 @admin_router.post("/refresh")
 async def refresh(
     refresh_token: str,
@@ -60,16 +90,16 @@ async def refresh(
 
 @admin_router.get("/get_student/{id}")
 async def get_by_id(
-    id: 
-    int, db:AsyncSession = Depends(get_db),
-    token: str = Depends(oauth2_scheme)
+    id: int, 
+    db:AsyncSession = Depends(get_db),
+    current_user = Depends(RoleChecker("admin"))
     ):
     return await student_crud.get(db=db , id=id)
 
 @admin_router.get("/get_all_students")
 async def get_all_students(
     db: AsyncSession = Depends(get_db),
-    token: str = Depends(oauth2_scheme)
+    current_user = Depends(RoleChecker("admin"))
     ):
     return await student_crud.get_all(db=db)
 
@@ -79,13 +109,13 @@ async def get_all_students(
 async def get_by_id(
     id: int, 
     db: AsyncSession = Depends(get_db),
-    token: str = Depends(oauth2_scheme)
+    current_user = Depends(RoleChecker("admin"))
     ):
     return await employee_crud.get(db=db , id=id)
 
 @admin_router.get("/get_all_employee")
 async def get_all_employees(
     db: AsyncSession = Depends(get_db),
-    token: str = Depends(oauth2_scheme)
+    current_user = Depends(RoleChecker("admin"))
     ):
     return await employee_crud.get_all(db=db)

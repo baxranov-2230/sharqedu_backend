@@ -3,15 +3,18 @@ import jwt
 from sqlalchemy import select
 from datetime import datetime, timezone, timedelta
 import asyncio
+from fastapi import Depends , status
 from fastapi.security import OAuth2PasswordBearer
 from passlib.context import CryptContext
 from jwt import ExpiredSignatureError, InvalidTokenError
 from fastapi import HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from src.models.user import User
+from typing import List , Callable
+from src.core.base import get_db
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/admin/login")
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
@@ -76,3 +79,56 @@ async def refresh_access_token(refresh_token: str) -> str:
         raise HTTPException(status_code=401, detail="Invalid refresh token")
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error{e}")
+    
+
+async def get_current_user(
+        token: str = Depends(oauth2_scheme),
+        db: AsyncSession = Depends(get_db)
+        ):
+    try:
+        payload = jwt.decode(
+            token,
+            settings.ACCESS_SECRET_KEY,
+            algorithms=[settings.ALGORITHM]
+        )
+        username = payload.get("sub")
+        if not username:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Username not found in token",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+
+        user = await get_user(db=db ,username=username)
+        return user
+
+    except jwt.ExpiredSignatureError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Token has expired",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+
+    except jwt.InvalidTokenError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    
+
+def RoleChecker(valid_roles: str | List[str]) -> Callable:
+    async def _role_checker(
+        user: User = Depends(get_current_user)  
+    ):
+        roles = [valid_roles] if isinstance(valid_roles, str) else valid_roles
+        if user.role not in roles:
+            raise HTTPException(
+                status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+                detail=f"Role '{user.role}' not allowed"
+            )
+        return user
+
+    return _role_checker
+
+    
