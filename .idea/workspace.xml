@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97749a06-f39a-43aa-bcfe-21ae3bcf1f3b" name="Changes" comment="first name">
-      <change afterPath="$PROJECT_DIR$/alembic/versions/258a32a8d4a7_first_revision.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schemas/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sharq_university.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/script.py.mako" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/script.py.mako" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/0f6233efdc6d_add_read.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/1de317c6e36c_add_username.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/2b0c8aff1859_first_revision.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/2c98034d4fac_add_phone_number_in_employe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/3ea8362eac82_add_somethisf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/872c46a53d25_add_about_username.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/93358eed712d_delete_image_path.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/9a1d546a8f65_first_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/eb5296bdfe14_add_user_table.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/f9bb1ff67947_correct_is_read.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/jwt_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/jwt_auth.py" afterDir="false" />
-    </list>
+    <list default="true" id="97749a06-f39a-43aa-bcfe-21ae3bcf1f3b" name="Changes" comment="first name" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +43,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/Projects/Sharqedu/sharq_university"
   }
 }]]></component>
