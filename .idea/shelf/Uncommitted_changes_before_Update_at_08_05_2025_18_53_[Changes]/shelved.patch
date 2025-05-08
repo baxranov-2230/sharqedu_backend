@@ -1,0 +1,1022 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Byte-compiled / optimized / DLL files\r\n__pycache__/\r\n*.py[cod]\r\n*$py.class\r\n\r\n# C extensions\r\n*.so\r\n\r\n# Distribution / packaging\r\n.Python\r\nbuild/\r\ndevelop-eggs/\r\ndist/\r\ndownloads/\r\neggs/\r\n.eggs/\r\nlib/\r\nlib64/\r\nparts/\r\nsdist/\r\nvar/\r\nwheels/\r\nshare/python-wheels/\r\n*.egg-info/\r\n.installed.cfg\r\n*.egg\r\nMANIFEST\r\n\r\n# PyInstaller\r\n#  Usually these files are written by a python script from a template\r\n#  before PyInstaller builds the exe, so as to inject date/other infos into it.\r\n*.manifest\r\n*.spec\r\n\r\n# Installer logs\r\npip-log.txt\r\npip-delete-this-directory.txt\r\n\r\n# Unit test / coverage reports\r\nhtmlcov/\r\n.tox/\r\n.nox/\r\n.coverage\r\n.coverage.*\r\n.cache\r\nnosetests.xml\r\ncoverage.xml\r\n*.cover\r\n*.py,cover\r\n.hypothesis/\r\n.pytest_cache/\r\ncover/\r\n\r\n# Translations\r\n*.mo\r\n*.pot\r\n\r\n# Django stuff:\r\n*.log\r\nlocal_settings.py\r\ndb.sqlite3\r\ndb.sqlite3-journal\r\n\r\n# Flask stuff:\r\ninstance/\r\n.webassets-cache\r\n\r\n# Scrapy stuff:\r\n.scrapy\r\n\r\n# Sphinx documentation\r\ndocs/_build/\r\n\r\n# PyBuilder\r\n.pybuilder/\r\ntarget/\r\n\r\n# Jupyter Notebook\r\n.ipynb_checkpoints\r\n\r\n# IPython\r\nprofile_default/\r\nipython_config.py\r\n\r\n# pyenv\r\n#   For a library or package, you might want to ignore these files since the code is\r\n#   intended to run in multiple environments; otherwise, check them in:\r\n# .python-version\r\n\r\n# pipenv\r\n#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.\r\n#   However, in case of collaboration, if having platform-specific dependencies or dependencies\r\n#   having no cross-platform support, pipenv may install dependencies that don't work, or not\r\n#   install all needed dependencies.\r\n#Pipfile.lock\r\n\r\n# UV\r\n#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.\r\n#   This is especially recommended for binary packages to ensure reproducibility, and is more\r\n#   commonly ignored for libraries.\r\n#uv.lock\r\n\r\n# poetry\r\n#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.\r\n#   This is especially recommended for binary packages to ensure reproducibility, and is more\r\n#   commonly ignored for libraries.\r\n#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control\r\n#poetry.lock\r\n\r\n# pdm\r\n#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.\r\n#pdm.lock\r\n#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it\r\n#   in version control.\r\n#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control\r\n.pdm.toml\r\n.pdm-python\r\n.pdm-build/\r\n\r\n# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm\r\n__pypackages__/\r\n\r\n# Celery stuff\r\ncelerybeat-schedule\r\ncelerybeat.pid\r\n\r\n# SageMath parsed files\r\n*.sage.py\r\n\r\n# Environments\r\n#.env\r\n.venv\r\nenv/\r\nvenv/\r\nENV/\r\nenv.bak/\r\nvenv.bak/\r\n\r\n# Spyder project settings\r\n.spyderproject\r\n.spyproject\r\n\r\n# Rope project settings\r\n.ropeproject\r\n\r\n# mkdocs documentation\r\n/site\r\n\r\n# mypy\r\n.mypy_cache/\r\n.dmypy.json\r\ndmypy.json\r\n\r\n# Pyre type checker\r\n.pyre/\r\n\r\n# pytype static type analyzer\r\n.pytype/\r\n\r\n# Cython debug symbols\r\ncython_debug/\r\n\r\n# PyCharm\r\n#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can\r\n#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore\r\n#  and can be added to the global gitignore or merged into this file.  For a more nuclear\r\n#  option (not recommended) you can uncomment the following to ignore the entire idea folder.\r\n#.idea/\r\n\r\n# Ruff stuff:\r\n.ruff_cache/\r\n\r\n# PyPI configuration file\r\n.pypirc\r\n\r\nuploads/
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ b/.gitignore	(date 1746712305801)
+@@ -128,7 +128,7 @@
+ *.sage.py
+ 
+ # Environments
+-#.env
++.env
+ .venv
+ env/
+ venv/
+@@ -172,5 +172,3 @@
+ 
+ # PyPI configuration file
+ .pypirc
+-
+-uploads/
+\ No newline at end of file
+Index: alembic/versions/3ea8362eac82_add_somethisf.py
+===================================================================
+diff --git a/alembic/versions/3ea8362eac82_add_somethisf.py b/alembic/versions/3ea8362eac82_add_somethisf.py
+deleted file mode 100644
+--- a/alembic/versions/3ea8362eac82_add_somethisf.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,32 +0,0 @@
+-"""Add somethisf
+-
+-Revision ID: 3ea8362eac82
+-Revises: 93358eed712d
+-Create Date: 2025-04-28 12:15:40.950318
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '3ea8362eac82'
+-down_revision: Union[str, None] = '93358eed712d'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    pass
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    pass
+-    # ### end Alembic commands ###
+Index: .idea/inspectionProfiles/profiles_settings.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/profiles_settings.xml	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,6 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <settings>
+-    <option name="USE_PROJECT_PROFILE" value="false" />
+-    <version value="1.0" />
+-  </settings>
+-</component>
+\ No newline at end of file
+Index: alembic/versions/eb5296bdfe14_add_user_table.py
+===================================================================
+diff --git a/alembic/versions/eb5296bdfe14_add_user_table.py b/alembic/versions/eb5296bdfe14_add_user_table.py
+deleted file mode 100644
+--- a/alembic/versions/eb5296bdfe14_add_user_table.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,38 +0,0 @@
+-"""Add user table
+-
+-Revision ID: eb5296bdfe14
+-Revises: 3ea8362eac82
+-Create Date: 2025-05-01 14:58:24.139361
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = 'eb5296bdfe14'
+-down_revision: Union[str, None] = '3ea8362eac82'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.create_table('users',
+-    sa.Column('id', sa.Integer(), nullable=False),
+-    sa.Column('username', sa.String(), nullable=False),
+-    sa.Column('password', sa.String(), nullable=False),
+-    sa.Column('role', sa.String(), nullable=False),
+-    sa.PrimaryKeyConstraint('id')
+-    )
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_table('users')
+-    # ### end Alembic commands ###
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: alembic/versions/9a1d546a8f65_first_name.py
+===================================================================
+diff --git a/alembic/versions/9a1d546a8f65_first_name.py b/alembic/versions/9a1d546a8f65_first_name.py
+deleted file mode 100644
+--- a/alembic/versions/9a1d546a8f65_first_name.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,34 +0,0 @@
+-"""first name
+-
+-Revision ID: 9a1d546a8f65
+-Revises: 3ea8362eac82
+-Create Date: 2025-04-30 15:26:02.629999
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '9a1d546a8f65'
+-down_revision: Union[str, None] = '3ea8362eac82'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_column('students', 'last_name')
+-    op.drop_column('students', 'father_name')
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.add_column('students', sa.Column('father_name', sa.VARCHAR(), autoincrement=False, nullable=False))
+-    op.add_column('students', sa.Column('last_name', sa.VARCHAR(), autoincrement=False, nullable=False))
+-    # ### end Alembic commands ###
+Index: alembic/versions/f9bb1ff67947_correct_is_read.py
+===================================================================
+diff --git a/alembic/versions/f9bb1ff67947_correct_is_read.py b/alembic/versions/f9bb1ff67947_correct_is_read.py
+deleted file mode 100644
+--- a/alembic/versions/f9bb1ff67947_correct_is_read.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,32 +0,0 @@
+-"""correct is_read
+-
+-Revision ID: f9bb1ff67947
+-Revises: 0f6233efdc6d
+-Create Date: 2025-04-24 15:01:26.809478
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = 'f9bb1ff67947'
+-down_revision: Union[str, None] = '0f6233efdc6d'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    pass
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    pass
+-    # ### end Alembic commands ###
+Index: alembic/versions/872c46a53d25_add_about_username.py
+===================================================================
+diff --git a/alembic/versions/872c46a53d25_add_about_username.py b/alembic/versions/872c46a53d25_add_about_username.py
+deleted file mode 100644
+--- a/alembic/versions/872c46a53d25_add_about_username.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,40 +0,0 @@
+-"""Add about username
+-
+-Revision ID: 872c46a53d25
+-Revises: 1de317c6e36c
+-Create Date: 2025-04-27 12:31:08.615951
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '872c46a53d25'
+-down_revision: Union[str, None] = '1de317c6e36c'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.add_column('students', sa.Column('first_name', sa.String(), nullable=False))
+-    op.add_column('students', sa.Column('last_name', sa.String(), nullable=False))
+-    op.add_column('students', sa.Column('father_name', sa.String(), nullable=False))
+-    op.add_column('students', sa.Column('direction', sa.String(), nullable=False))
+-    op.drop_column('students', 'username')
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.add_column('students', sa.Column('username', sa.VARCHAR(), autoincrement=False, nullable=False))
+-    op.drop_column('students', 'direction')
+-    op.drop_column('students', 'father_name')
+-    op.drop_column('students', 'last_name')
+-    op.drop_column('students', 'first_name')
+-    # ### end Alembic commands ###
+Index: alembic/versions/2c98034d4fac_add_phone_number_in_employe.py
+===================================================================
+diff --git a/alembic/versions/2c98034d4fac_add_phone_number_in_employe.py b/alembic/versions/2c98034d4fac_add_phone_number_in_employe.py
+deleted file mode 100644
+--- a/alembic/versions/2c98034d4fac_add_phone_number_in_employe.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,32 +0,0 @@
+-"""Add phone_number in employe
+-
+-Revision ID: 2c98034d4fac
+-Revises: 2b0c8aff1859
+-Create Date: 2025-04-24 14:25:52.885094
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '2c98034d4fac'
+-down_revision: Union[str, None] = '2b0c8aff1859'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.add_column('employees', sa.Column('phone_number', sa.String(), nullable=False))
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_column('employees', 'phone_number')
+-    # ### end Alembic commands ###
+Index: alembic/versions/93358eed712d_delete_image_path.py
+===================================================================
+diff --git a/alembic/versions/93358eed712d_delete_image_path.py b/alembic/versions/93358eed712d_delete_image_path.py
+deleted file mode 100644
+--- a/alembic/versions/93358eed712d_delete_image_path.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,32 +0,0 @@
+-"""Delete image path
+-
+-Revision ID: 93358eed712d
+-Revises: 872c46a53d25
+-Create Date: 2025-04-27 13:14:56.282613
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '93358eed712d'
+-down_revision: Union[str, None] = '872c46a53d25'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_column('blogs', 'image_path')
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.add_column('blogs', sa.Column('image_path', sa.VARCHAR(), autoincrement=False, nullable=True))
+-    # ### end Alembic commands ###
+Index: alembic/versions/1de317c6e36c_add_username.py
+===================================================================
+diff --git a/alembic/versions/1de317c6e36c_add_username.py b/alembic/versions/1de317c6e36c_add_username.py
+deleted file mode 100644
+--- a/alembic/versions/1de317c6e36c_add_username.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,49 +0,0 @@
+-"""add username
+-
+-Revision ID: 1de317c6e36c
+-Revises: f9bb1ff67947
+-Create Date: 2025-04-27 12:06:30.148363
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '1de317c6e36c'
+-down_revision: Union[str, None] = 'f9bb1ff67947'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.create_table('blogs',
+-        sa.Column('id', sa.Integer(), nullable=False),
+-        sa.Column('title', sa.String(), nullable=False),
+-        sa.Column('image_path', sa.String(), nullable=True),
+-        sa.Column('body', sa.String(), nullable=False),
+-        sa.Column('date', sa.Date(), nullable=True),
+-        sa.PrimaryKeyConstraint('id')
+-    )
+-    op.create_table('blog_images',
+-        sa.Column('id', sa.Integer(), nullable=False),
+-        sa.Column('blog_id', sa.Integer(), nullable=True),
+-        sa.Column('image_path', sa.String(), nullable=False),
+-        sa.ForeignKeyConstraint(['blog_id'], ['blogs.id'], ),
+-        sa.PrimaryKeyConstraint('id')
+-    )
+-    op.add_column('students', sa.Column('username', sa.String(), nullable=False))
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_column('students', 'username')
+-    op.drop_table('blog_images')
+-    op.drop_table('blogs')
+-    # ### end Alembic commands ###
+\ No newline at end of file
+Index: alembic/versions/0f6233efdc6d_add_read.py
+===================================================================
+diff --git a/alembic/versions/0f6233efdc6d_add_read.py b/alembic/versions/0f6233efdc6d_add_read.py
+deleted file mode 100644
+--- a/alembic/versions/0f6233efdc6d_add_read.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,34 +0,0 @@
+-"""add read
+-
+-Revision ID: 0f6233efdc6d
+-Revises: 2c98034d4fac
+-Create Date: 2025-04-24 14:53:31.078009
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '0f6233efdc6d'
+-down_revision: Union[str, None] = '2c98034d4fac'
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.add_column('employees', sa.Column('is_read', sa.Boolean(), nullable=False))
+-    op.add_column('students', sa.Column('is_read', sa.Boolean(), nullable=False))
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_column('students', 'is_read')
+-    op.drop_column('employees', 'is_read')
+-    # ### end Alembic commands ###
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/sharq_university.iml" filepath="$PROJECT_DIR$/.idea/sharq_university.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Black">
+-    <option name="sdkName" value="Python 3.13 (sharq_university)" />
+-  </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (sharq_university)" project-jdk-type="Python SDK" />
+-</project>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+deleted file mode 100644
+--- a/.idea/inspectionProfiles/Project_Default.xml	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,98 +0,0 @@
+-<component name="InspectionProjectProfileManager">
+-  <profile version="1.0">
+-    <option name="myName" value="Project Default" />
+-    <inspection_tool class="PyInterpreterInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+-    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredPackages">
+-        <value>
+-          <list size="69">
+-            <item index="0" class="java.lang.String" itemvalue="Django" />
+-            <item index="1" class="java.lang.String" itemvalue="PyYAML" />
+-            <item index="2" class="java.lang.String" itemvalue="ruamel.yaml.clib" />
+-            <item index="3" class="java.lang.String" itemvalue="cffi" />
+-            <item index="4" class="java.lang.String" itemvalue="asgiref" />
+-            <item index="5" class="java.lang.String" itemvalue="docker-compose" />
+-            <item index="6" class="java.lang.String" itemvalue="Pillow" />
+-            <item index="7" class="java.lang.String" itemvalue="uvloop" />
+-            <item index="8" class="java.lang.String" itemvalue="rsa" />
+-            <item index="9" class="java.lang.String" itemvalue="six" />
+-            <item index="10" class="java.lang.String" itemvalue="python-dateutil" />
+-            <item index="11" class="java.lang.String" itemvalue="psycopg2-binary" />
+-            <item index="12" class="java.lang.String" itemvalue="tzdata" />
+-            <item index="13" class="java.lang.String" itemvalue="ecdsa" />
+-            <item index="14" class="java.lang.String" itemvalue="numpy" />
+-            <item index="15" class="java.lang.String" itemvalue="pyasn1" />
+-            <item index="16" class="java.lang.String" itemvalue="bcrypt" />
+-            <item index="17" class="java.lang.String" itemvalue="pandas" />
+-            <item index="18" class="java.lang.String" itemvalue="et_xmlfile" />
+-            <item index="19" class="java.lang.String" itemvalue="pytz" />
+-            <item index="20" class="java.lang.String" itemvalue="python-jose" />
+-            <item index="21" class="java.lang.String" itemvalue="openpyxl" />
+-            <item index="22" class="java.lang.String" itemvalue="httpx" />
+-            <item index="23" class="java.lang.String" itemvalue="PyJWT" />
+-            <item index="24" class="java.lang.String" itemvalue="alembic" />
+-            <item index="25" class="java.lang.String" itemvalue="greenlet" />
+-            <item index="26" class="java.lang.String" itemvalue="SQLAlchemy" />
+-            <item index="27" class="java.lang.String" itemvalue="python-dotenv" />
+-            <item index="28" class="java.lang.String" itemvalue="h11" />
+-            <item index="29" class="java.lang.String" itemvalue="MarkupSafe" />
+-            <item index="30" class="java.lang.String" itemvalue="Jinja2" />
+-            <item index="31" class="java.lang.String" itemvalue="sniffio" />
+-            <item index="32" class="java.lang.String" itemvalue="httptools" />
+-            <item index="33" class="java.lang.String" itemvalue="markdown-it-py" />
+-            <item index="34" class="java.lang.String" itemvalue="typing-inspection" />
+-            <item index="35" class="java.lang.String" itemvalue="Pygments" />
+-            <item index="36" class="java.lang.String" itemvalue="starlette" />
+-            <item index="37" class="java.lang.String" itemvalue="certifi" />
+-            <item index="38" class="java.lang.String" itemvalue="mdurl" />
+-            <item index="39" class="java.lang.String" itemvalue="anyio" />
+-            <item index="40" class="java.lang.String" itemvalue="uvicorn" />
+-            <item index="41" class="java.lang.String" itemvalue="itsdangerous" />
+-            <item index="42" class="java.lang.String" itemvalue="websockets" />
+-            <item index="43" class="java.lang.String" itemvalue="annotated-types" />
+-            <item index="44" class="java.lang.String" itemvalue="pydantic-settings" />
+-            <item index="45" class="java.lang.String" itemvalue="watchfiles" />
+-            <item index="46" class="java.lang.String" itemvalue="dnspython" />
+-            <item index="47" class="java.lang.String" itemvalue="pydantic" />
+-            <item index="48" class="java.lang.String" itemvalue="pydantic-extra-types" />
+-            <item index="49" class="java.lang.String" itemvalue="fastapi-cli" />
+-            <item index="50" class="java.lang.String" itemvalue="typer" />
+-            <item index="51" class="java.lang.String" itemvalue="asyncpg" />
+-            <item index="52" class="java.lang.String" itemvalue="orjson" />
+-            <item index="53" class="java.lang.String" itemvalue="rich" />
+-            <item index="54" class="java.lang.String" itemvalue="python-multipart" />
+-            <item index="55" class="java.lang.String" itemvalue="click" />
+-            <item index="56" class="java.lang.String" itemvalue="rich-toolkit" />
+-            <item index="57" class="java.lang.String" itemvalue="fastapi" />
+-            <item index="58" class="java.lang.String" itemvalue="pydantic_core" />
+-            <item index="59" class="java.lang.String" itemvalue="email_validator" />
+-            <item index="60" class="java.lang.String" itemvalue="typing_extensions" />
+-            <item index="61" class="java.lang.String" itemvalue="Mako" />
+-            <item index="62" class="java.lang.String" itemvalue="httpcore" />
+-            <item index="63" class="java.lang.String" itemvalue="idna" />
+-            <item index="64" class="java.lang.String" itemvalue="shellingham" />
+-            <item index="65" class="java.lang.String" itemvalue="ujson" />
+-            <item index="66" class="java.lang.String" itemvalue="odfpy" />
+-            <item index="67" class="java.lang.String" itemvalue="defusedxml" />
+-            <item index="68" class="java.lang.String" itemvalue="passlib" />
+-          </list>
+-        </value>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+-      <option name="ignoredErrors">
+-        <list>
+-          <option value="N802" />
+-          <option value="N813" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="ignoredIdentifiers">
+-        <list>
+-          <option value="face_recognition" />
+-        </list>
+-      </option>
+-    </inspection_tool>
+-  </profile>
+-</component>
+\ No newline at end of file
+Index: .idea/sharq_university.iml
+===================================================================
+diff --git a/.idea/sharq_university.iml b/.idea/sharq_university.iml
+deleted file mode 100644
+--- a/.idea/sharq_university.iml	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="PYTHON_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+-    </content>
+-    <orderEntry type="jdk" jdkName="Python 3.13 (sharq_university)" jdkType="Python SDK" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-  <component name="PyDocumentationSettings">
+-    <option name="format" value="PLAIN" />
+-    <option name="myDocStringFormat" value="Plain" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: alembic/versions/2b0c8aff1859_first_revision.py
+===================================================================
+diff --git a/alembic/versions/2b0c8aff1859_first_revision.py b/alembic/versions/2b0c8aff1859_first_revision.py
+deleted file mode 100644
+--- a/alembic/versions/2b0c8aff1859_first_revision.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ /dev/null	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
+@@ -1,44 +0,0 @@
+-"""first revision
+-
+-Revision ID: 2b0c8aff1859
+-Revises: 
+-Create Date: 2025-04-23 22:54:25.514610
+-
+-"""
+-from typing import Sequence, Union
+-
+-from alembic import op
+-import sqlalchemy as sa
+-
+-
+-# revision identifiers, used by Alembic.
+-revision: str = '2b0c8aff1859'
+-down_revision: Union[str, None] = None
+-branch_labels: Union[str, Sequence[str], None] = None
+-depends_on: Union[str, Sequence[str], None] = None
+-
+-
+-def upgrade() -> None:
+-    """Upgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.create_table('employees',
+-    sa.Column('id', sa.Integer(), nullable=False),
+-    sa.Column('diplom', sa.String(), nullable=False),
+-    sa.Column('passport', sa.String(), nullable=False),
+-    sa.Column('resume', sa.String(), nullable=False),
+-    sa.PrimaryKeyConstraint('id')
+-    )
+-    op.create_table('students',
+-    sa.Column('id', sa.Integer(), nullable=False),
+-    sa.Column('phone_number', sa.String(), nullable=False),
+-    sa.PrimaryKeyConstraint('id')
+-    )
+-    # ### end Alembic commands ###
+-
+-
+-def downgrade() -> None:
+-    """Downgrade schema."""
+-    # ### commands auto generated by Alembic - please adjust! ###
+-    op.drop_table('students')
+-    op.drop_table('employees')
+-    # ### end Alembic commands ###
+Index: alembic/env.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import asyncio\r\nfrom logging.config import fileConfig\r\n\r\nfrom sqlalchemy import pool\r\nfrom sqlalchemy.engine import Connection\r\nfrom sqlalchemy.ext.asyncio import async_engine_from_config\r\nfrom src.core.base import Base\r\nfrom src.core.config import settings\r\nfrom src.models import *\r\n\r\nfrom alembic import context\r\n\r\n# this is the Alembic Config object, which provides\r\n# access to the values within the .ini file in use.\r\nconfig = context.config\r\n\r\n# Interpret the config file for Python logging.\r\n# This line sets up loggers basically.\r\nif config.config_file_name is not None:\r\n    fileConfig(config.config_file_name)\r\n\r\nconfig.set_main_option(\"sqlalchemy.url\" , settings.connection_string)\r\n\r\n# add your model's MetaData object here\r\n# for 'autogenerate' support\r\n# from myapp import mymodel\r\n# target_metadata = mymodel.Base.metadata\r\ntarget_metadata = Base.metadata\r\n\r\n# other values from the config, defined by the needs of env.py,\r\n# can be acquired:\r\n# my_important_option = config.get_main_option(\"my_important_option\")\r\n# ... etc.\r\n\r\n\r\ndef run_migrations_offline() -> None:\r\n    \"\"\"Run migrations in 'offline' mode.\r\n\r\n    This configures the context with just a URL\r\n    and not an Engine, though an Engine is acceptable\r\n    here as well.  By skipping the Engine creation\r\n    we don't even need a DBAPI to be available.\r\n\r\n    Calls to context.execute() here emit the given string to the\r\n    script output.\r\n\r\n    \"\"\"\r\n    url = config.get_main_option(\"sqlalchemy.url\")\r\n    context.configure(\r\n        url=url,\r\n        target_metadata=target_metadata,\r\n        literal_binds=True,\r\n        dialect_opts={\"paramstyle\": \"named\"},\r\n    )\r\n\r\n    with context.begin_transaction():\r\n        context.run_migrations()\r\n\r\n\r\ndef do_run_migrations(connection: Connection) -> None:\r\n    context.configure(connection=connection, target_metadata=target_metadata)\r\n\r\n    with context.begin_transaction():\r\n        context.run_migrations()\r\n\r\n\r\nasync def run_async_migrations() -> None:\r\n    \"\"\"In this scenario we need to create an Engine\r\n    and associate a connection with the context.\r\n\r\n    \"\"\"\r\n\r\n    connectable = async_engine_from_config(\r\n        config.get_section(config.config_ini_section, {}),\r\n        prefix=\"sqlalchemy.\",\r\n        poolclass=pool.NullPool,\r\n    )\r\n\r\n    async with connectable.connect() as connection:\r\n        await connection.run_sync(do_run_migrations)\r\n\r\n    await connectable.dispose()\r\n\r\n\r\ndef run_migrations_online() -> None:\r\n    \"\"\"Run migrations in 'online' mode.\"\"\"\r\n\r\n    asyncio.run(run_async_migrations())\r\n\r\n\r\nif context.is_offline_mode():\r\n    run_migrations_offline()\r\nelse:\r\n    run_migrations_online()\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/alembic/env.py b/alembic/env.py
+--- a/alembic/env.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ b/alembic/env.py	(date 1746712305801)
+@@ -4,10 +4,11 @@
+ from sqlalchemy import pool
+ from sqlalchemy.engine import Connection
+ from sqlalchemy.ext.asyncio import async_engine_from_config
++
++
+ from src.core.base import Base
+ from src.core.config import settings
+ from src.models import *
+-
+ from alembic import context
+ 
+ # this is the Alembic Config object, which provides
+Index: alembic/script.py.mako
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"${message}\r\n\r\nRevision ID: ${up_revision}\r\nRevises: ${down_revision | comma,n}\r\nCreate Date: ${create_date}\r\n\r\n\"\"\"\r\nfrom typing import Sequence, Union\r\n\r\nfrom alembic import op\r\nimport sqlalchemy as sa\r\n${imports if imports else \"\"}\r\n\r\n# revision identifiers, used by Alembic.\r\nrevision: str = ${repr(up_revision)}\r\ndown_revision: Union[str, None] = ${repr(down_revision)}\r\nbranch_labels: Union[str, Sequence[str], None] = ${repr(branch_labels)}\r\ndepends_on: Union[str, Sequence[str], None] = ${repr(depends_on)}\r\n\r\n\r\ndef upgrade() -> None:\r\n    \"\"\"Upgrade schema.\"\"\"\r\n    ${upgrades if upgrades else \"pass\"}\r\n\r\n\r\ndef downgrade() -> None:\r\n    \"\"\"Downgrade schema.\"\"\"\r\n    ${downgrades if downgrades else \"pass\"}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/alembic/script.py.mako b/alembic/script.py.mako
+--- a/alembic/script.py.mako	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ b/alembic/script.py.mako	(date 1746712305802)
+@@ -19,10 +19,8 @@
+ 
+ 
+ def upgrade() -> None:
+-    """Upgrade schema."""
+     ${upgrades if upgrades else "pass"}
+ 
+ 
+ def downgrade() -> None:
+-    """Downgrade schema."""
+     ${downgrades if downgrades else "pass"}
+Index: src/api/admin.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from fastapi import APIRouter\r\nfrom src.utils.auth import *\r\nfrom src.models import Student , Employee\r\nfrom fastapi.security import OAuth2PasswordRequestForm\r\nfrom src.utils.jwt_auth import *\r\n\r\n\r\nadmin_router = APIRouter(\r\n    tags=[\"Admin\"],\r\n    prefix=\"/admin\"\r\n)\r\n\r\nstudent_crud = MainCrud(model=Student)\r\nemployee_crud = MainCrud(model=Employee)\r\n\r\n\r\n@admin_router.post(\"/login\")\r\nasync def login(\r\n    form_data : OAuth2PasswordRequestForm = Depends(),\r\n    db: AsyncSession = Depends(get_db)\r\n    ):\r\n\r\n    user = await authenticate_user(db=db , username=form_data.username , password=form_data.password)\r\n\r\n\r\n    access_token = await create_access_token(\r\n        {\r\n            \"sub\" : user.username,\r\n            \"role\" : user.role\r\n        }\r\n    )\r\n\r\n    refresh_token = await create_refresh_token(\r\n        {\r\n            \"sub\": user.username,\r\n            \"role\": user.role\r\n        }\r\n    )\r\n\r\n    return {\r\n            \"access_token\": access_token,\r\n            \"refresh_token\": refresh_token,\r\n            \"token_type\": \"bearer\"\r\n        }\r\n\r\n@admin_router.post(\"/refresh\")\r\nasync def refresh(\r\n    refresh_token: str,\r\n    token: str = Depends(oauth2_scheme)\r\n):\r\n    tokens = await refresh_access_token(refresh_token=token)\r\n\r\n    access_token=tokens.get('access_token')\r\n    refresh_token=tokens.get('refresh_token')\r\n    return {\r\n        'access_token': access_token, \r\n        'refresh_token': refresh_token\r\n        }\r\n    \r\n\r\n@admin_router.get(\"/get_student/{id}\")\r\nasync def get_by_id(\r\n    id: \r\n    int, db:AsyncSession = Depends(get_db),\r\n    token: str = Depends(oauth2_scheme)\r\n    ):\r\n    return await student_crud.get(db=db , id=id)\r\n\r\n@admin_router.get(\"/get_all_students\")\r\nasync def get_all_students(\r\n    db: AsyncSession = Depends(get_db),\r\n    token: str = Depends(oauth2_scheme)\r\n    ):\r\n    return await student_crud.get_all(db=db)\r\n\r\n\r\n\r\n@admin_router.get(\"/get_employee/{id}\")\r\nasync def get_by_id(\r\n    id: int, \r\n    db: AsyncSession = Depends(get_db),\r\n    token: str = Depends(oauth2_scheme)\r\n    ):\r\n    return await employee_crud.get(db=db , id=id)\r\n\r\n@admin_router.get(\"/get_all_employee\")\r\nasync def get_all_employees(\r\n    db: AsyncSession = Depends(get_db),\r\n    token: str = Depends(oauth2_scheme)\r\n    ):\r\n    return await employee_crud.get_all(db=db)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/api/admin.py b/src/api/admin.py
+--- a/src/api/admin.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ b/src/api/admin.py	(date 1746712305802)
+@@ -2,7 +2,9 @@
+ from src.utils.auth import *
+ from src.models import Student , Employee
+ from fastapi.security import OAuth2PasswordRequestForm
++from src.schemas.user import UserCreate
+ from src.utils.jwt_auth import *
++from src.models.user import User
+ 
+ 
+ admin_router = APIRouter(
+@@ -43,6 +45,34 @@
+             "token_type": "bearer"
+         }
+ 
++@admin_router.post("/register")
++async def register(
++    username: str,
++    password: str,
++    role: str,
++    db: AsyncSession = Depends(get_db)
++):
++    try:
++
++        hashed_password = await hash_password(password=password)
++        user_data = UserCreate(
++            username=username,
++            password = hashed_password,
++            role = role
++        )
++        new_user = User(**user_data.model_dump(exclude_unset=True))
++        db.add(new_user)
++        await db.commit()
++        await db.refresh(new_user)
++        return new_user
++    
++    except Exception as e:
++        await db.rollback()
++        raise HTTPException(
++            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
++            detail=f"Error : {e}"
++        )
++
+ @admin_router.post("/refresh")
+ async def refresh(
+     refresh_token: str,
+@@ -60,16 +90,16 @@
+ 
+ @admin_router.get("/get_student/{id}")
+ async def get_by_id(
+-    id: 
+-    int, db:AsyncSession = Depends(get_db),
+-    token: str = Depends(oauth2_scheme)
++    id: int, 
++    db:AsyncSession = Depends(get_db),
++    current_user = Depends(RoleChecker("admin"))
+     ):
+     return await student_crud.get(db=db , id=id)
+ 
+ @admin_router.get("/get_all_students")
+ async def get_all_students(
+     db: AsyncSession = Depends(get_db),
+-    token: str = Depends(oauth2_scheme)
++    current_user = Depends(RoleChecker("admin"))
+     ):
+     return await student_crud.get_all(db=db)
+ 
+@@ -79,13 +109,13 @@
+ async def get_by_id(
+     id: int, 
+     db: AsyncSession = Depends(get_db),
+-    token: str = Depends(oauth2_scheme)
++    current_user = Depends(RoleChecker("admin"))
+     ):
+     return await employee_crud.get(db=db , id=id)
+ 
+ @admin_router.get("/get_all_employee")
+ async def get_all_employees(
+     db: AsyncSession = Depends(get_db),
+-    token: str = Depends(oauth2_scheme)
++    current_user = Depends(RoleChecker("admin"))
+     ):
+     return await employee_crud.get_all(db=db)
+\ No newline at end of file
+Index: src/utils/jwt_auth.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from src.core.config import settings\r\nimport jwt\r\nfrom sqlalchemy import select\r\nfrom datetime import datetime, timezone, timedelta\r\nimport asyncio\r\nfrom fastapi.security import OAuth2PasswordBearer\r\nfrom passlib.context import CryptContext\r\nfrom jwt import ExpiredSignatureError, InvalidTokenError\r\nfrom fastapi import HTTPException\r\nfrom sqlalchemy.ext.asyncio import AsyncSession\r\nfrom src.models.user import User\r\n\r\n\r\noauth2_scheme = OAuth2PasswordBearer(tokenUrl=\"/auth/login\")\r\npwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\r\n\r\n\r\nasync def hash_password(password: str) -> str:\r\n    return await asyncio.to_thread(pwd_context.hash, password)\r\n\r\n\r\nasync def verify_password(plain_password: str, hashed_password: str) -> bool:\r\n    return await asyncio.to_thread(pwd_context.verify, plain_password, hashed_password)\r\n\r\n\r\nasync def get_user(db: AsyncSession, username: str):\r\n    result = await db.execute(select(User).filter(User.username == username))\r\n    return result.scalar_one_or_none()\r\n\r\n\r\nasync def authenticate_user(db: AsyncSession, username: str, password: str):\r\n    user = await get_user(db, username)\r\n    if not user or not await verify_password(password, user.password):\r\n        return None\r\n    return user\r\n\r\nasync def _create_token(data: dict, secret_key: str, expire_delta: timedelta) -> str:\r\n    to_encode = data.copy()\r\n    now = datetime.now(timezone.utc)\r\n    expire = now + expire_delta\r\n    to_encode.update({\r\n        \"iat\": now,\r\n        \"exp\": expire\r\n    })\r\n    return await asyncio.to_thread(\r\n        jwt.encode,\r\n        to_encode,\r\n        secret_key,\r\n        algorithm=settings.ALGORITHM,\r\n    )\r\n\r\nasync def create_access_token(data: dict) -> str:\r\n    expire_delta = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)\r\n    return await _create_token(data, settings.ACCESS_SECRET_KEY, expire_delta)\r\n\r\nasync def create_refresh_token(data: dict) -> str:\r\n    expire_delta = timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)\r\n    return await _create_token(data, settings.REFRESH_SECRET_KEY, expire_delta)\r\n\r\nasync def refresh_access_token(refresh_token: str) -> str:\r\n    try:\r\n        payload = jwt.decode(\r\n            refresh_token,\r\n            settings.REFRESH_SECRET_KEY,\r\n            algorithms=[settings.ALGORITHM]\r\n        )\r\n        subject = payload.get(\"sub\")\r\n        if subject is None:\r\n            raise HTTPException(status_code=401, detail=\"Invalid refresh token: 'sub' claim missing\")\r\n        new_data = {\"sub\": subject}\r\n        access_token = await create_access_token(new_data)\r\n        return access_token\r\n    except ExpiredSignatureError:\r\n        raise HTTPException(status_code=401, detail=\"Refresh token expired\")\r\n    except InvalidTokenError:\r\n        raise HTTPException(status_code=401, detail=\"Invalid refresh token\")\r\n    except Exception as e:\r\n        raise HTTPException(status_code=500, detail=f\"Internal server error{e}\")
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/utils/jwt_auth.py b/src/utils/jwt_auth.py
+--- a/src/utils/jwt_auth.py	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ b/src/utils/jwt_auth.py	(date 1746712305803)
+@@ -3,15 +3,18 @@
+ from sqlalchemy import select
+ from datetime import datetime, timezone, timedelta
+ import asyncio
++from fastapi import Depends , status
+ from fastapi.security import OAuth2PasswordBearer
+ from passlib.context import CryptContext
+ from jwt import ExpiredSignatureError, InvalidTokenError
+ from fastapi import HTTPException
+ from sqlalchemy.ext.asyncio import AsyncSession
+ from src.models.user import User
++from typing import List , Callable
++from src.core.base import get_db
+ 
+ 
+-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
++oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/admin/login")
+ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+ 
+ 
+@@ -75,4 +78,57 @@
+     except InvalidTokenError:
+         raise HTTPException(status_code=401, detail="Invalid refresh token")
+     except Exception as e:
+-        raise HTTPException(status_code=500, detail=f"Internal server error{e}")
+\ No newline at end of file
++        raise HTTPException(status_code=500, detail=f"Internal server error{e}")
++    
++
++async def get_current_user(
++        token: str = Depends(oauth2_scheme),
++        db: AsyncSession = Depends(get_db)
++        ):
++    try:
++        payload = jwt.decode(
++            token,
++            settings.ACCESS_SECRET_KEY,
++            algorithms=[settings.ALGORITHM]
++        )
++        username = payload.get("sub")
++        if not username:
++            raise HTTPException(
++                status_code=status.HTTP_401_UNAUTHORIZED,
++                detail="Username not found in token",
++                headers={"WWW-Authenticate": "Bearer"},
++            )
++
++        user = await get_user(db=db ,username=username)
++        return user
++
++    except jwt.ExpiredSignatureError:
++        raise HTTPException(
++            status_code=status.HTTP_401_UNAUTHORIZED,
++            detail="Token has expired",
++            headers={"WWW-Authenticate": "Bearer"},
++        )
++
++    except jwt.InvalidTokenError:
++        raise HTTPException(
++            status_code=status.HTTP_401_UNAUTHORIZED,
++            detail="Invalid token",
++            headers={"WWW-Authenticate": "Bearer"},
++        )
++    
++
++def RoleChecker(valid_roles: str | List[str]) -> Callable:
++    async def _role_checker(
++        user: User = Depends(get_current_user)  
++    ):
++        roles = [valid_roles] if isinstance(valid_roles, str) else valid_roles
++        if user.role not in roles:
++            raise HTTPException(
++                status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
++                detail=f"Role '{user.role}' not allowed"
++            )
++        return user
++
++    return _role_checker
++
++    
+\ No newline at end of file
+Index: alembic/versions/258a32a8d4a7_first_revision.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/alembic/versions/258a32a8d4a7_first_revision.py b/alembic/versions/258a32a8d4a7_first_revision.py
+new file mode 100644
+--- /dev/null	(date 1746712305802)
++++ b/alembic/versions/258a32a8d4a7_first_revision.py	(date 1746712305802)
+@@ -0,0 +1,71 @@
++"""First revision
++
++Revision ID: 258a32a8d4a7
++Revises: 
++Create Date: 2025-05-08 16:27:35.466825
++
++"""
++from typing import Sequence, Union
++
++from alembic import op
++import sqlalchemy as sa
++
++
++# revision identifiers, used by Alembic.
++revision: str = '258a32a8d4a7'
++down_revision: Union[str, None] = None
++branch_labels: Union[str, Sequence[str], None] = None
++depends_on: Union[str, Sequence[str], None] = None
++
++
++def upgrade() -> None:
++    # ### commands auto generated by Alembic - please adjust! ###
++    op.create_table('blogs',
++    sa.Column('id', sa.Integer(), nullable=False),
++    sa.Column('title', sa.String(), nullable=False),
++    sa.Column('body', sa.String(), nullable=False),
++    sa.Column('date', sa.Date(), nullable=True),
++    sa.PrimaryKeyConstraint('id')
++    )
++    op.create_table('employees',
++    sa.Column('id', sa.Integer(), nullable=False),
++    sa.Column('diplom', sa.String(), nullable=False),
++    sa.Column('passport', sa.String(), nullable=False),
++    sa.Column('resume', sa.String(), nullable=False),
++    sa.Column('phone_number', sa.String(), nullable=False),
++    sa.Column('is_read', sa.Boolean(), nullable=False),
++    sa.PrimaryKeyConstraint('id')
++    )
++    op.create_table('students',
++    sa.Column('id', sa.Integer(), nullable=False),
++    sa.Column('first_name', sa.String(), nullable=False),
++    sa.Column('direction', sa.String(), nullable=False),
++    sa.Column('phone_number', sa.String(), nullable=False),
++    sa.Column('is_read', sa.Boolean(), nullable=False),
++    sa.PrimaryKeyConstraint('id')
++    )
++    op.create_table('users',
++    sa.Column('id', sa.Integer(), nullable=False),
++    sa.Column('username', sa.String(), nullable=False),
++    sa.Column('password', sa.String(), nullable=False),
++    sa.Column('role', sa.String(), nullable=False),
++    sa.PrimaryKeyConstraint('id')
++    )
++    op.create_table('blog_images',
++    sa.Column('id', sa.Integer(), nullable=False),
++    sa.Column('blog_id', sa.Integer(), nullable=True),
++    sa.Column('image_path', sa.String(), nullable=False),
++    sa.ForeignKeyConstraint(['blog_id'], ['blogs.id'], ),
++    sa.PrimaryKeyConstraint('id')
++    )
++    # ### end Alembic commands ###
++
++
++def downgrade() -> None:
++    # ### commands auto generated by Alembic - please adjust! ###
++    op.drop_table('blog_images')
++    op.drop_table('users')
++    op.drop_table('students')
++    op.drop_table('employees')
++    op.drop_table('blogs')
++    # ### end Alembic commands ###
+Index: .env
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>DB_USER=postgres\r\nDB_HOST=localhost\r\nDB_PASSWORD=postgres\r\nDB_PORT=5432\r\nDB_NAME=sharq_university\r\n\r\nMODE=DEV\r\nACCESS_SECRET_KEY=qwertyhjkl\r\nREFRESH_SECRET_KEY=poiuytrewq\r\nALGORITHM=HS256\r\n\r\nACCESS_TOKEN_EXPIRE_MINUTES=15\r\nREFRESH_TOKEN_EXPIRE_DAYS=15\r\n\r\n#URL=https://zaynidinov.uz:51433\r\n#URL=http://127.0.0.1:8000
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.env b/.env
+--- a/.env	(revision 05f98bc60ef56a7f9144552b82daf8baed322913)
++++ b/.env	(date 1746712305800)
+@@ -1,16 +1,14 @@
+ DB_USER=postgres
+ DB_HOST=localhost
+-DB_PASSWORD=postgres
++DB_PASSWORD=12345
+ DB_PORT=5432
+-DB_NAME=sharq_university
++DB_NAME=sharq_edu
+ 
+ MODE=DEV
+-ACCESS_SECRET_KEY=qwertyhjkl
+-REFRESH_SECRET_KEY=poiuytrewq
++
++ACCESS_SECRET_KEY=qf2aa8c953278291d53bb7db8b95da55e171ce6ee2ff7c6d03f0a4152e59b50bc
++REFRESH_SECRET_KEY=efbc4734de34e59e0fb213da06b4ef635201ae3e1c939be3c01c25fe32133f05
+ ALGORITHM=HS256
+ 
+-ACCESS_TOKEN_EXPIRE_MINUTES=15
+-REFRESH_TOKEN_EXPIRE_DAYS=15
+-
+-#URL=https://zaynidinov.uz:51433
+-#URL=http://127.0.0.1:8000
+\ No newline at end of file
++ACCESS_TOKEN_EXPIRE_MINUTES=30
++REFRESH_TOKEN_EXPIRE_DAYS=30
+Index: src/schemas/user.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/schemas/user.py b/src/schemas/user.py
+new file mode 100644
+--- /dev/null	(date 1746712305802)
++++ b/src/schemas/user.py	(date 1746712305802)
+@@ -0,0 +1,6 @@
++from pydantic import BaseModel
++
++class UserCreate(BaseModel):
++    username: str
++    password: str
++    role: str
+\ No newline at end of file
