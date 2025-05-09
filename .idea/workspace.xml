@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97749a06-f39a-43aa-bcfe-21ae3bcf1f3b" name="Changes" comment="5175">
+    <list default="true" id="97749a06-f39a-43aa-bcfe-21ae3bcf1f3b" name="Changes" comment="refresh">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/jwt_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/jwt_auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +106,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746007819385</updated>
-    </task>
-    <task id="LOCAL-00019" summary="docker nginx">
-      <option name="closed" value="true" />
-      <created>1746458265945</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1746458265945</updated>
     </task>
     <task id="LOCAL-00020" summary="docker nginx">
       <option name="closed" value="true" />
@@ -497,7 +491,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746776886807</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="refresh">
+      <option name="closed" value="true" />
+      <created>1746789779184</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1746789779184</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -513,6 +515,7 @@
     <MESSAGE value="first name" />
     <MESSAGE value="one alembic" />
     <MESSAGE value="5175" />
-    <option name="LAST_COMMIT_MESSAGE" value="5175" />
+    <MESSAGE value="refresh" />
+    <option name="LAST_COMMIT_MESSAGE" value="refresh" />
   </component>
 </project>

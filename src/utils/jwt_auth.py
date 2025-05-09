@@ -53,7 +53,7 @@ async def _create_token(data: dict, secret_key: str, expire_delta: timedelta) ->
     )
 
 async def create_access_token(data: dict) -> str:
-    expire_delta = timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
+    expire_delta = timedelta(days=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
     return await _create_token(data, settings.ACCESS_SECRET_KEY, expire_delta)
 
 async def create_refresh_token(data: dict) -> str:
