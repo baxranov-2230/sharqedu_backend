@@ -28,7 +28,7 @@ async def verify_password(plain_password: str, hashed_password: str) -> bool:
 
 async def get_user(db: AsyncSession, username: str):
     result = await db.execute(select(User).filter(User.username == username))
-    return result.scalar_one_or_none()
+    return result.scalars().first()
 
 
 async def authenticate_user(db: AsyncSession, username: str, password: str):
@@ -68,9 +68,13 @@ async def refresh_access_token(refresh_token: str) -> str:
             algorithms=[settings.ALGORITHM]
         )
         subject = payload.get("sub")
+        role = payload.get("role")
         if subject is None:
             raise HTTPException(status_code=401, detail="Invalid refresh token: 'sub' claim missing")
-        new_data = {"sub": subject}
+        new_data = {
+            "sub": subject,
+            "role": role
+            }
         access_token = await create_access_token(new_data)
         return access_token
     except ExpiredSignatureError:
