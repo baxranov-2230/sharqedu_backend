@@ -103,38 +103,6 @@
       <option name="presentableId" value="Default" />
       <updated>1746007819385</updated>
     </task>
-    <task id="LOCAL-00024" summary="docker nginx">
-      <option name="closed" value="true" />
-      <created>1746460150004</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1746460150004</updated>
-    </task>
-    <task id="LOCAL-00025" summary="docker nginx">
-      <option name="closed" value="true" />
-      <created>1746460484573</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1746460484573</updated>
-    </task>
-    <task id="LOCAL-00026" summary="docker nginx">
-      <option name="closed" value="true" />
-      <created>1746460633833</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1746460633833</updated>
-    </task>
-    <task id="LOCAL-00027" summary="docker nginx">
-      <option name="closed" value="true" />
-      <created>1746461004527</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1746461004527</updated>
-    </task>
     <task id="LOCAL-00028" summary="docker nginx">
       <option name="closed" value="true" />
       <created>1746461417064</created>
@@ -495,7 +463,39 @@
       <option name="project" value="LOCAL" />
       <updated>1747019547183</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Allow Ip">
+      <option name="closed" value="true" />
+      <created>1747020096879</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1747020096879</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Allow Ip">
+      <option name="closed" value="true" />
+      <created>1747020111860</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1747020111860</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Allow Ip">
+      <option name="closed" value="true" />
+      <created>1747020211183</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1747020211183</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Allow Ip">
+      <option name="closed" value="true" />
+      <created>1747020300776</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1747020300776</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="UnknownFeatures">
