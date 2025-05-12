@@ -24,15 +24,15 @@ async def get_real_ip(request: Request):
 
 
 
-# class SwaggerAccessMiddleware(BaseHTTPMiddleware):
-#     async def dispatch(self, request: Request, call_next):
-#         if request.url.path.startswith("/docs") or request.url.path.startswith("/openapi.json"):
-#             client_ip = request.client.host
-#             if client_ip != ALLOWED_IP:
-#                 raise HTTPException(status_code=403, detail="Swagger sahifasiga kirishga ruxsat yo'q")
-#         return await call_next(request)
-#
-# app.add_middleware(SwaggerAccessMiddleware)
+class SwaggerAccessMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        if request.url.path.startswith("/docs") or request.url.path.startswith("/openapi.json"):
+            client_ip = request.client.host
+            if client_ip != ALLOWED_IP:
+                raise HTTPException(status_code=403, detail="Swagger sahifasiga kirishga ruxsat yo'q")
+        return await call_next(request)
+
+app.add_middleware(SwaggerAccessMiddleware)
 
 
 
