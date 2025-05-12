@@ -6,7 +6,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from src.api import main_router
 import uvicorn
-ALLOWED_IP = "172.18.0.4"
+ALLOWED_IP = "213.230.124.102"
 
 app = FastAPI(
     # docs_url=None,  # Swagger UI ni o'chirish
@@ -24,17 +24,17 @@ async def get_real_ip(request: Request):
 
 
 
-# class SwaggerAccessMiddleware(BaseHTTPMiddleware):
-#     async def dispatch(self, request: Request, call_next):
-#         if request.url.path.startswith("/docs") or request.url.path.startswith("/openapi.json"):
-#             forwarded_for = request.headers.get("x-forwarded-for")
-#             ip = forwarded_for.split(",")[0]
-#             # client_ip = request.client.host
-#             if ip != ALLOWED_IP:
-#                 raise HTTPException(status_code=403, detail="Swagger sahifasiga kirishga ruxsat yo'q")
-#         return await call_next(request)
-#
-# app.add_middleware(SwaggerAccessMiddleware)
+class SwaggerAccessMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        if request.url.path.startswith("/docs") or request.url.path.startswith("/openapi.json"):
+            forwarded_for = request.headers.get("x-forwarded-for")
+            ip = forwarded_for.split(",")[0]
+            # client_ip = request.client.host
+            if ip != ALLOWED_IP:
+                raise HTTPException(status_code=403, detail="Swagger sahifasiga kirishga ruxsat yo'q")
+        return await call_next(request)
+
+app.add_middleware(SwaggerAccessMiddleware)
 
 
 
