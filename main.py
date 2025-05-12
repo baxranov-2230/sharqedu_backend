@@ -6,7 +6,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from src.api import main_router
 import uvicorn
-ALLOWED_IP = "213.230.124.102"
+ALLOWED_IP = "172.18.0.4"
 
 app = FastAPI(
     # docs_url=None,  # Swagger UI ni o'chirish
