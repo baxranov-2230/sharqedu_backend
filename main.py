@@ -13,14 +13,14 @@ app = FastAPI(
     # redoc_url=None  # ReDoc ni o'chirish
 )
 
-# @app.get("/real-ip")
-# async def get_real_ip(request: Request):
-#     forwarded_for = request.headers.get("x-forwarded-for")
-#     if forwarded_for:
-#         ip = forwarded_for.split(",")[0]
-#     else:
-#         ip = request.client.host
-#     return {"ip": ip}
+@app.get("/real-ip")
+async def get_real_ip(request: Request):
+    forwarded_for = request.headers.get("x-forwarded-for")
+    if forwarded_for:
+        ip = forwarded_for.split(",")[0]
+    else:
+        ip = request.client.host
+    return {"ip": ip}
 
 
 
