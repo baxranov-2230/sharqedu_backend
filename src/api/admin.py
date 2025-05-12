@@ -75,16 +75,11 @@ async def register(
 
 @admin_router.post("/refresh")
 async def refresh(
-    token: str,
-    # token: str = Depends(oauth2_scheme)
+    token: str
 ):
     tokens = await refresh_access_token(refresh_token=token)
-
-    access_token=tokens.get('access_token')
-    refresh_token=tokens.get('refresh_token')
     return {
-        'access_token': access_token, 
-        'refresh_token': refresh_token
+        'access_token': tokens, 
         }
     
 
